@@ -1,24 +1,14 @@
-﻿@{
-    Layout = null;
-}
+﻿
 <!doctype html>
 <html lang="tr">
-@await Component.InvokeAsync("_AdminLayoutHeadViewComponent")
+@await Component.InvokeAsync("_AdminLayoutHeadComponentPartial")
 <body>
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
          data-sidebar-position="fixed" data-header-position="fixed">
-        @await Component.InvokeAsync("_AdminLayoutSidebarViewComponent")
-        <div class="body-wrapper">
-            @await Component.InvokeAsync("_AdminLayoutHeaderViewComponent")
-            <div class="container-fluid">
-                <!--  Row 1 -->
-                <div class="col-lg-12 d-flex align-items-strech">
-                    @RenderBody()
-                </div>
-                @await Component.InvokeAsync("_AdminLayoutFooterViewComponent")
-            </div>
-        </div>
+        @await Component.InvokeAsync("_AdminLayoutSidebarComponentPartial")
+        @RenderBody()
+        @await Component.InvokeAsync("_AdminLayoutFooterComponentPartial")
     </div>
-    @await Component.InvokeAsync("_AdminLayoutScriptViewComponent")
+    @await Component.InvokeAsync("_AdminLayoutScriptComponentPartial")
 </body>
 </html>
