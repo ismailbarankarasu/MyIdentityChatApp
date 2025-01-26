@@ -2,7 +2,7 @@
 
 namespace MyIdentityChatApp.PresentationLayer.ViewComponents._AdminLayout
 {
-    public class _AdminLayoutHeaderViewComponent: ViewComponent
+    public class _AdminLayoutSidebarComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {
