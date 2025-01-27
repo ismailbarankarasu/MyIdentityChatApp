@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,28 +32,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Register/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutFooterViewComponent/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0Rm9vdGVyVmlld0NvbXBvbmVudFxEZWZhdWx0LmNzaHRtbA==
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutFooterComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0Rm9vdGVyQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutHeaderViewComponent/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0SGVhZGVyVmlld0NvbXBvbmVudFxEZWZhdWx0LmNzaHRtbA==
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutHeadComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0SGVhZENvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutHeadViewComponent/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0SGVhZFZpZXdDb21wb25lbnRcRGVmYXVsdC5jc2h0bWw=
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutScriptComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2NyaXB0Q29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutScriptViewComponent/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2NyaXB0Vmlld0NvbXBvbmVudFxEZWZhdWx0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutSidebarViewComponent/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2lkZWJhclZpZXdDb21wb25lbnRcRGVmYXVsdC5jc2h0bWw=
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Components/_AdminLayoutSidebarComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluTGF5b3V0U2lkZWJhckNvbXBvbmVudFBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ismai/OneDrive/Masaüstü/my/MyIdentityChatApp/MyIdentityChatApp.PresentationLayer/Views/Shared/Error.cshtml]
