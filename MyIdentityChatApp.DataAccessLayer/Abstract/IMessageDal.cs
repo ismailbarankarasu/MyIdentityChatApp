@@ -9,5 +9,6 @@ namespace MyIdentityChatApp.DataAccessLayer.Abstract
 {
     public interface IMessageDal:IGenericDal<Message>
     {
+        public List<Message> GetMessageByReceiverId(int id);
     }
 }
