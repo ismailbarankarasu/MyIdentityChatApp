@@ -9,5 +9,6 @@ namespace MyIdentityChatApp.BusinessLayer.Abstract
 {
     public interface IMessageService: IGenericService<Message>
     {
+        public List<Message> TGetMessageByReceiverId(int id);
     }
 }

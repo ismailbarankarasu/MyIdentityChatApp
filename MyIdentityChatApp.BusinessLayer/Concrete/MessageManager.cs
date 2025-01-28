@@ -33,6 +33,11 @@ namespace MyIdentityChatApp.BusinessLayer.Concrete
             return _messageDal.GetById(id);
         }
 
+        public List<Message> TGetMessageByReceiverId(int id)
+        {
+            return _messageDal.GetMessageByReceiverId(id);
+        }
+
         public void TInsert(Message entity)
         {
             _messageDal.Insert(entity);
