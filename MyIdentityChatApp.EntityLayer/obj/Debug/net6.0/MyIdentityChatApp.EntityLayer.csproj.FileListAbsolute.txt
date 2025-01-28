@@ -12,3 +12,4 @@ C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.Entity
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.EntityLayer\obj\Debug\net6.0\MyIdentityChatApp.EntityLayer.pdb
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.EntityLayer\obj\Debug\net6.0\MyIdentityChatApp.EntityLayer.genruntimeconfig.cache
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.EntityLayer\obj\Debug\net6.0\ref\MyIdentityChatApp.EntityLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.EntityLayer\obj\Debug\net6.0\MyIdentityChatApp.EntityLayer.sourcelink.json
