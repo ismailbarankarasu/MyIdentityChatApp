@@ -1,6 +1,11 @@
 using MyIdentityChatApp.DataAccessLayer.Context;
 using Microsoft.EntityFrameworkCore;
 using MyIdentityChatApp.EntityLayer.Concrete;
+using MyIdentityChatApp.BusinessLayer.Abstract;
+using MyIdentityChatApp.BusinessLayer.Concrete;
+using MyIdentityChatApp.DataAccessLayer.Abstract;
+using MyIdentityChatApp.DataAccessLayer.EntityFramework;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,8 +18,15 @@ builder.Services.AddDbContext<ChatAppContext>(options =>
 
 // Add Identity
 builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
-    .AddEntityFrameworkStores<ChatAppContext>();
+    .AddEntityFrameworkStores<ChatAppContext>()
+    .AddDefaultTokenProviders();
 
+
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+builder.Services.AddScoped<ICategoryDal, EfCategoryDal>();
+
+builder.Services.AddScoped<IMessageService, MessageManager>();
+builder.Services.AddScoped<IMessageDal, EfMessageDal>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
