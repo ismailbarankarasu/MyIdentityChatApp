@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using MyIdentityChatApp.DataAccessLayer.Abstract;
+using MyIdentityChatApp.DataAccessLayer.Context;
 using MyIdentityChatApp.DataAccessLayer.Repositories;
 using MyIdentityChatApp.EntityLayer.Concrete;
 using System;
@@ -12,7 +13,7 @@ namespace MyIdentityChatApp.DataAccessLayer.EntityFramework
 {
     public class EfCategoryDal : GenericRepository<Category>, ICategoryDal
     {
-        public EfCategoryDal(IdentityDbContext context) : base(context)
+        public EfCategoryDal(ChatAppContext context) : base(context)
         {
         }
         

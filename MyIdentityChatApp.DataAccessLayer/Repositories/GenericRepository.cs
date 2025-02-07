@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using MyIdentityChatApp.DataAccessLayer.Abstract;
+using MyIdentityChatApp.DataAccessLayer.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,9 @@ namespace MyIdentityChatApp.DataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
-        private readonly IdentityDbContext _context;
+        private readonly ChatAppContext _context;
 
-        public GenericRepository(IdentityDbContext context)
+        public GenericRepository(ChatAppContext context)
         {
             _context = context;
         }

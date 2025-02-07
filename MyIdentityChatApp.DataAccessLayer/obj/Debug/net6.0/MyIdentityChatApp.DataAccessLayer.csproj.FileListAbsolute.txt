@@ -8,9 +8,9 @@ C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAc
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\MyIdentityChatApp.DataAccessLayer.AssemblyInfoInputs.cache
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\MyIdentityChatApp.DataAccessLayer.AssemblyInfo.cs
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\MyIdentityChatApp.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\MyIdentityChatApp.DataAccessLayer.sourcelink.json
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\MyIdenti.4C8CDC35.Up2Date
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\MyIdentityChatApp.DataAccessLayer.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\refint\MyIdentityChatApp.DataAccessLayer.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\MyIdentityChatApp.DataAccessLayer.pdb
 C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\ref\MyIdentityChatApp.DataAccessLayer.dll
-C:\Users\ismai\OneDrive\Masaüstü\my\MyIdentityChatApp\MyIdentityChatApp.DataAccessLayer\obj\Debug\net6.0\MyIdentityChatApp.DataAccessLayer.sourcelink.json

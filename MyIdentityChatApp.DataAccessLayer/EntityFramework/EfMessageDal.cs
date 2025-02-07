@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MyIdentityChatApp.DataAccessLayer.Abstract;
 using MyIdentityChatApp.DataAccessLayer.Context;
 using MyIdentityChatApp.DataAccessLayer.Repositories;
@@ -15,14 +17,25 @@ namespace MyIdentityChatApp.DataAccessLayer.EntityFramework
     public class EfMessageDal : GenericRepository<Message>, IMessageDal
     {
         private readonly ChatAppContext context;
-        public EfMessageDal(IdentityDbContext _context) : base(_context)
+
+        public EfMessageDal(ChatAppContext _context) : base(_context)
         {
+            context = _context;
         }
-        //Bana gelen mailler
-        public List<Message> GetMessageByReceiverId(int id)
+
+        public List<Message> GetMessageByReceiverName(int id)
         {
-            var values = context.Messages.Where(x => x.ReceiverId == id).ToList();
-            return values;
+            return context.Messages.Where(x => x.SenderId == id)
+                    .Include(x => x.Receiver)
+                    .ToList();
+        }
+
+        //Bana gelen mailler
+        public List<Message> GetMessageBySenderName(int id)
+        {
+            return context.Messages.Where(x => x.ReceiverId == id)
+                .Include(x => x.Sender)
+                .ToList();
         }
     }
 }
