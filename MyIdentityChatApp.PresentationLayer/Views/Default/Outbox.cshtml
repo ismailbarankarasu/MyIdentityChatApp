@@ -1,0 +1,31 @@
+﻿@model List<MyIdentityChatApp.EntityLayer.Concrete.Message>
+@{
+    ViewData["Title"] = "Outbox";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content mt-4" style="margin-left:60px;">
+    <table class="table table-bordred table-hover">
+        <tr>
+            <th>#</th>
+            <th>Başlık</th>
+            <th>İçerik</th>
+            <th>Gönderildiği Tarih</th>
+            <th>Alıcı Adı</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MessageId</td>
+                <td>@item.Title</td>
+                <td>@item.Content</td>
+                <td>@item.SentAt.ToShortDateString()</td>
+                <td>@item.Receiver.Name @item.Receiver.Surname</td>
+                <td><a class="btn btn-danger">Sil</a></td>
+                <td><a class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+</section>

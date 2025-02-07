@@ -14,7 +14,7 @@ namespace MyIdentityChatApp.PresentationLayer.ViewComponents._AdminLayout
             _userManager = userManager;
         }
 
-        public async Task<IViewComponentResult> Invoke()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
             var values = await _userManager.FindByNameAsync(User.Identity.Name);
             UserViewModel model = new UserViewModel();

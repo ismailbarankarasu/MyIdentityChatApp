@@ -4,15 +4,14 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<section class="content">
-    <table class="table table-bordred">
+<section class="content mt-4" style="margin-left:60px;">
+    <table class="table table-bordred table-hover">
         <tr>
             <th>#</th>
             <th>Başlık</th>
             <th>İçerik</th>
             <th>Gönderildiği Tarih</th>
-            <th>Gönderen ID</th>
-            <th>Alıcı Id</th>
+            <th>Gönderen Adı</th>
             <th>Sil</th>
             <th>Güncelle</th>
         </tr>
@@ -22,13 +21,11 @@
                 <td>@item.MessageId</td>
                 <td>@item.Title</td>
                 <td>@item.Content</td>
-                <td>@item.SentAt</td>
-                <td>@item.SenderId</td>
-                <td>@item.ReceiverId</td>
+                <td>@item.SentAt.ToShortDateString()</td>
+                <td>@item.Sender.Name @item.Sender.Surname</td>
                 <td><a class="btn btn-danger">Sil</a></td>
                 <td><a class="btn btn-success">Güncelle</a></td>
             </tr>
         }
-        <button class="btn btn-info">Yeni Mesaj</button>
     </table>
 </section>
