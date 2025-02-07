@@ -1,4 +1,5 @@
-﻿using MyIdentityChatApp.EntityLayer.Concrete;
+﻿using Microsoft.AspNetCore.Identity;
+using MyIdentityChatApp.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace MyIdentityChatApp.BusinessLayer.Abstract
 {
     public interface IMessageService: IGenericService<Message>
     {
-        public List<Message> TGetMessageByReceiverId(int id);
+        public List<Message> TGetMessageBySenderName(int id);
+        public List<Message> TGetMessageByReceiverName(int id);
     }
 }

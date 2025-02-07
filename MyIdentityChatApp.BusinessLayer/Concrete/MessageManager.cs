@@ -33,9 +33,14 @@ namespace MyIdentityChatApp.BusinessLayer.Concrete
             return _messageDal.GetById(id);
         }
 
-        public List<Message> TGetMessageByReceiverId(int id)
+        public List<Message> TGetMessageByReceiverName(int id)
         {
-            return _messageDal.GetMessageByReceiverId(id);
+            return _messageDal.GetMessageByReceiverName(id);
+        }
+
+        public List<Message> TGetMessageBySenderName(int id)
+        {
+            return _messageDal.GetMessageBySenderName(id);
         }
 
         public void TInsert(Message entity)

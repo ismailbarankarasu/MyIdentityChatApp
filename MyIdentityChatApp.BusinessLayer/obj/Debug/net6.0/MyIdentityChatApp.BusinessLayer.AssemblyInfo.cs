@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyIdentityChatApp.BusinessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf8e5a73f5635e9c056a6761775a13632c34270d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68c752deeba3c0f3292dd0e8657e9678b35d1e9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyIdentityChatApp.BusinessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyIdentityChatApp.BusinessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
