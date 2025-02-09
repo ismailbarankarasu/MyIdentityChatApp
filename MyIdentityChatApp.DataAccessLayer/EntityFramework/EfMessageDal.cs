@@ -37,5 +37,21 @@ namespace MyIdentityChatApp.DataAccessLayer.EntityFramework
                 .Include(x => x.Sender)
                 .ToList();
         }
+
+        public Message GetMessageDetail(int id)
+        {
+            var value= context.Messages
+                .Include(x => x.Category)
+                .Include(j => j.Sender)
+                .Include(y => y.Receiver)
+                .Where(x => x.MessageId == id)
+                .FirstOrDefault();
+            return value;
+        }
+
+        public Task SendMessageAsync(Message message)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

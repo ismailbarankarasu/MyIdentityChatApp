@@ -11,5 +11,7 @@ namespace MyIdentityChatApp.DataAccessLayer.Abstract
     {
         public List<Message> GetMessageBySenderName(int id);
         public List<Message> GetMessageByReceiverName(int id);
+        public Message GetMessageDetail(int id);
+        Task SendMessageAsync(Message message);
     }
 }
