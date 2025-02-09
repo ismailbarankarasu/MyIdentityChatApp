@@ -12,5 +12,7 @@ namespace MyIdentityChatApp.BusinessLayer.Abstract
     {
         public List<Message> TGetMessageBySenderName(int id);
         public List<Message> TGetMessageByReceiverName(int id);
+        public Message TGetMessageDetail(int id);
+        Task TSendMessageAsync(Message message);
     }
 }

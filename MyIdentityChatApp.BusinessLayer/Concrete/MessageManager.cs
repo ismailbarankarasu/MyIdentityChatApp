@@ -43,9 +43,19 @@ namespace MyIdentityChatApp.BusinessLayer.Concrete
             return _messageDal.GetMessageBySenderName(id);
         }
 
+        public Message TGetMessageDetail(int id)
+        {
+            return _messageDal.GetMessageDetail(id);
+        }
+
         public void TInsert(Message entity)
         {
             _messageDal.Insert(entity);
+        }
+
+        public Task TSendMessageAsync(Message message)
+        {
+            return _messageDal.SendMessageAsync(message);
         }
 
         public void TUpdate(Message entity)
