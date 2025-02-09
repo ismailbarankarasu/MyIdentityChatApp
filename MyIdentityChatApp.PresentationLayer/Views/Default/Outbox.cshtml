@@ -12,8 +12,6 @@
             <th>İçerik</th>
             <th>Gönderildiği Tarih</th>
             <th>Alıcı Adı</th>
-            <th>Sil</th>
-            <th>Güncelle</th>
         </tr>
         @foreach (var item in Model)
         {
@@ -23,8 +21,6 @@
                 <td>@item.Content</td>
                 <td>@item.SentAt.ToShortDateString()</td>
                 <td>@item.Receiver.Name @item.Receiver.Surname</td>
-                <td><a class="btn btn-danger">Sil</a></td>
-                <td><a class="btn btn-success">Güncelle</a></td>
             </tr>
         }
     </table>

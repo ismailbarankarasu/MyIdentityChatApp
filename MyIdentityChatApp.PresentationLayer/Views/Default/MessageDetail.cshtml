@@ -1,0 +1,42 @@
+﻿@using MyIdentityChatApp.EntityLayer.Concrete
+@model Message
+@{
+    ViewData["Title"] = "MessageDetail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    .message-card {
+        background: #fffaf0;
+        border-left: 5px solid #f39c12;
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .message-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #d35400;
+    }
+
+    .message-content {
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .message-meta {
+        font-size: 0.9rem;
+        color: #777;
+    }
+</style>
+<div class="container py-4">
+    <h2 class="text-center mb-4">Mesaj Detayı</h2>
+    <input type="hidden" asp-for="MessageId" />    
+    <div class="message-card">
+        <div class="message-title">@Model.Title</div>
+        <div class="message-meta">Gönderen: @Model.Sender.Name | Alıcı: @Model.Receiver.Name | Tarih: @Model.SentAt.ToShortDateString()</div>
+        <div class="message-content mt-2">@Model.Content</div>
+    </div>
+</div>
+

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using MyIdentityChatApp.BusinessLayer.Abstract;
 using MyIdentityChatApp.DataAccessLayer.Abstract;
 using MyIdentityChatApp.EntityLayer.Concrete;
@@ -13,11 +14,13 @@ namespace MyIdentityChatApp.PresentationLayer.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IMessageService _messageService;
+        private readonly ICategoryService _categoryService;
 
-        public DefaultController(UserManager<ApplicationUser> userManager, IMessageService messageService)
+        public DefaultController(UserManager<ApplicationUser> userManager, IMessageService messageService, ICategoryService categoryService)
         {
             _userManager = userManager;
             _messageService = messageService;
+            _categoryService = categoryService;
         }
 
         public async Task<IActionResult> Index()
@@ -43,5 +46,11 @@ namespace MyIdentityChatApp.PresentationLayer.Controllers
             
             return View(messages);
         }
+        public IActionResult MessageDetail(int id)
+        {
+            var value = _messageService.TGetMessageDetail(id);
+            return View(value);
+        }
+        
     }
 }

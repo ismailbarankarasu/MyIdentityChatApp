@@ -3,7 +3,31 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+<style>
+    .message-card {
+        background: #fffaf0;
+        border-left: 5px solid #f39c12;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
+    .message-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #d35400;
+    }
+
+    .message-content {
+        font-size: 1.1rem;
+        color: #333;
+    }
+
+    .message-meta {
+        font-size: 0.9rem;
+        color: #777;
+    }
+</style>
 <section class="content mt-4" style="margin-left:60px;">
     <table class="table table-bordred table-hover">
         <tr>
@@ -13,7 +37,7 @@
             <th>Gönderildiği Tarih</th>
             <th>Gönderen Adı</th>
             <th>Sil</th>
-            <th>Güncelle</th>
+            <th>Detay</th>
         </tr>
         @foreach (var item in Model)
         {
@@ -24,7 +48,7 @@
                 <td>@item.SentAt.ToShortDateString()</td>
                 <td>@item.Sender.Name @item.Sender.Surname</td>
                 <td><a class="btn btn-danger">Sil</a></td>
-                <td><a class="btn btn-success">Güncelle</a></td>
+                <td><a href="/Default/MessageDetail/@item.MessageId" class="btn btn-info">Mesaj Detayı</a></td>
             </tr>
         }
     </table>
