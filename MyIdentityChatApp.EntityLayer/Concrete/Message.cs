@@ -18,5 +18,8 @@ namespace MyIdentityChatApp.EntityLayer.Concrete
 
         public int ReceiverId { get; set; }
         public ApplicationUser Receiver { get; set; }
+
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }
