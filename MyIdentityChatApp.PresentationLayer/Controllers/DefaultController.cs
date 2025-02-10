@@ -51,6 +51,18 @@ namespace MyIdentityChatApp.PresentationLayer.Controllers
             var value = _messageService.TGetMessageDetail(id);
             return View(value);
         }
+        [HttpGet]
+        public IActionResult SendMessage()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult SendMessage(Message message)
+        {
+            message.SentAt = DateTime.Now;
+            _messageService.TInsert(message);
+            return View();
+        }
         
     }
 }
