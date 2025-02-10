@@ -49,9 +49,5 @@ namespace MyIdentityChatApp.DataAccessLayer.EntityFramework
             return value;
         }
 
-        public Task SendMessageAsync(Message message)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
