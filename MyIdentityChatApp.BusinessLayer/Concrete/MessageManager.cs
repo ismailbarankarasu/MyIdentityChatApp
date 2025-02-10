@@ -53,11 +53,6 @@ namespace MyIdentityChatApp.BusinessLayer.Concrete
             _messageDal.Insert(entity);
         }
 
-        public Task TSendMessageAsync(Message message)
-        {
-            return _messageDal.SendMessageAsync(message);
-        }
-
         public void TUpdate(Message entity)
         {
             _messageDal.Update(entity);
