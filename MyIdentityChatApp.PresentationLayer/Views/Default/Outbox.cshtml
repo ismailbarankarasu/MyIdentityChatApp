@@ -7,19 +7,17 @@
 <section class="content mt-4" style="margin-left:60px;">
     <table class="table table-bordred table-hover">
         <tr>
-            <th>#</th>
+            <th>Gönderildiği Tarih</th>
             <th>Başlık</th>
             <th>İçerik</th>
-            <th>Gönderildiği Tarih</th>
             <th>Alıcı Adı</th>
         </tr>
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.MessageId</td>
+                <td>@item.SentAt.ToShortDateString()</td>
                 <td>@item.Title</td>
                 <td>@item.Content</td>
-                <td>@item.SentAt.ToShortDateString()</td>
                 <td>@item.Receiver.Name @item.Receiver.Surname</td>
             </tr>
         }
