@@ -28,9 +28,6 @@ Bu projede **Identity** kullanarak, Gmail benzeri bir **web tabanlı mail uygula
 ![Login Görüntüsü](photos/login.jpg)
 ![Register Görüntüsü](photos/register.jpg)
 
-### Admin Paneli Görüntüsü
-
-
 ### Gelen Mesajlar Görüntüsü
 ![Gelen Mesajlar Görüntüsü](photos/DefaultList.jpg)
 
