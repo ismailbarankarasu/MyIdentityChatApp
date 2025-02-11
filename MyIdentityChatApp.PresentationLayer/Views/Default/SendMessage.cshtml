@@ -3,6 +3,7 @@
     ViewData["Title"] = "SendMessage";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <div class="main-panel">
     <div class="content" style="margin-bottom:310px;">
         <div class="container-fluid">
@@ -22,10 +23,14 @@
                                 <input type="text" asp-for="Content" class="form-control mb-3" />
 
                                 <label>Kime </label>
-                                <input type="text" asp-for="ReceiverId" class="form-control mb-3" />
+                                <select asp-for="ReceiverId" asp-items="ViewBag.Receivers" class="form-control mb-3">
+                                    <option value="">Seçiniz...</option>
+                                </select>
 
-                                <label>Category </label>
-                                <input type="text" asp-for="CategoryId" class="form-control mb-3" />
+                                <label>Kategory</label>
+                                <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control mb-3">
+                                    <option value="">Seçiniz...</option>
+                                </select>
 
                                 <button class="btn btn-primary">Gönder</button>
                             </form>
@@ -36,3 +41,14 @@
         </div>
     </div>
 </div>
+@if (TempData["MessageSent"] != null && (bool)TempData["MessageSent"] == true)
+{
+    <script>
+        Swal.fire({
+            title: "Başarılı!",
+            text: "Mailiniz Başarılı Bir Şekilde Gönderildi.",
+            icon: "success",
+            confirmButtonText: "Tamam"
+        });
+    </script>
+}

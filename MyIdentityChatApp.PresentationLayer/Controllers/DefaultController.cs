@@ -52,17 +52,58 @@ namespace MyIdentityChatApp.PresentationLayer.Controllers
             return View(value);
         }
         [HttpGet]
-        public IActionResult SendMessage()
+        public async Task<IActionResult> SendMessage()
         {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            var users = _userManager.Users
+                .Where(u => u.Id != user.Id) 
+                .Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),
+                    Text = u.UserName 
+                })
+                .ToList();
+
+            ViewBag.Receivers = users;
+
+            var categories = _categoryService.TGetAll()
+                .Select(c => new SelectListItem
+                {
+                    Value = c.CategoryId.ToString(),
+                    Text = c.Name 
+                })
+                .ToList();
+
+            ViewBag.Categories = categories;
+
             return View();
         }
+
+
         [HttpPost]
-        public IActionResult SendMessage(Message message)
+        public async Task<IActionResult> SendMessage(Message message)
         {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return RedirectToAction("Login");
+            }
+
+            message.SenderId = user.Id;
             message.SentAt = DateTime.Now;
             _messageService.TInsert(message);
-            return View();
+
+            TempData["MessageSent"] = true;
+
+            return RedirectToAction("SendMessage");
         }
-        
+
+
+
     }
 }
