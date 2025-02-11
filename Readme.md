@@ -37,6 +37,8 @@ Bu projede **Identity** kullanarak, Gmail benzeri bir **web tabanlı mail uygula
 ### Giden Mesajlar Görüntüsü
 ![Blog Detay Görüntüsü](photos/DefaultOutbox.jpg)
 
+### SweetAlert Görüntüsü
+![SweetAlert Görüntüsü](photos/SweetAlert.jpg)
 
 ## Kurulum ⚡
 1. Projeyi klonlayın:
